@@ -1,6 +1,7 @@
 // 🔥 请保留你文件最顶部的 package com.idormy.sms.forwarder.utils 声明，不要覆盖它 🔥
 package com.idormy.sms.forwarder.utils
 
+import android.util.Log
 import java.net.Inet6Address
 import java.net.NetworkInterface
 import java.net.SocketException
