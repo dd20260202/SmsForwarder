@@ -44,7 +44,7 @@ jobs:
       - name: Checkout Android Keystore
         uses: actions/checkout@v4
         with:
-          repository: jjss520/keystore   # ✅ 已经改为你的仓库
+          repository: dd20260202/keystore   # ✅ 已经改为你的仓库
           token: ${{ secrets.TOKEN }}
           path: keystore
           
