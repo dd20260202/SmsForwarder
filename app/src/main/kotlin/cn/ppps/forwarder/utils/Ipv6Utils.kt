@@ -63,7 +63,7 @@ object Ipv6Utils {
             if (guaAddresses.isNotEmpty()) {
                 // 如果发现超过 1 个 GUA，优先尝试寻找“非临时”的那个 (AndServer 需要稳定的 Public IP)
                 guaAddresses.sortBy { isTemporary(it) } 
-                returnguaAddresses[0].hostAddress.split("%")[0] // 去掉 %wlan0 后缀
+                return guaAddresses[0].hostAddress.split("%")[0] // 去掉 %wlan0 后缀
             }
 
             // 2. 其次选 ULA (可以做局域网服务器)
